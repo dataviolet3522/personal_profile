@@ -1,11 +1,24 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Layout from "./Layout";
+import Profile from "./components/Profile";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h3>Personal Profile</h3>
-    </div>
+    <>
+      <Router>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Profile />} />
+            <Route path="/Tableau" element={<Profile />} />
+            <Route path="/section3" element={<Profile />} />
+            <Route path="/section4" element={<Profile />} />
+            <Route path="/section5" element={<Profile />} />
+          </Routes>
+        </Layout>
+      </Router>
+    </>
   );
-}
+};
 
 export default App;
