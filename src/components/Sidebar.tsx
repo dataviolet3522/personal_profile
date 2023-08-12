@@ -64,7 +64,7 @@ const Sidebar = () => {
       };
 
   return (
-    <div className="fixed">
+    <div className="fixed z-10">
       <div
         onClick={() => setIsOpenSideBar(false)}
         className={`md:hidden fixed inset-0 max-h-screen z-[998] bg-black/50 ${
