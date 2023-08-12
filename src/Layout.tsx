@@ -6,7 +6,7 @@ type Props = {
 };
 
 const Layout = ({ children }: Props) => {
-  const isBigScreen = useMediaQuery({
+  const isSmallScreen = useMediaQuery({
     query: "(max-width: 768px)",
   });
   return (
@@ -14,7 +14,7 @@ const Layout = ({ children }: Props) => {
       <Sidebar />
       <main
         className="flex-1 mx-auto py-2"
-        style={{ marginLeft: isBigScreen ? "45px" : "260px" }}
+        style={{ marginLeft: isSmallScreen ? "45px" : "260px" }}
       >
         {children}
       </main>
