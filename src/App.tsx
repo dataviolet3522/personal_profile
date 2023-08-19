@@ -14,7 +14,7 @@ const App = () => {
         <Layout>
           <Routes>
             <Route path="/" element={<Profile />} />
-            <Route path="/Tableau" element={<Tableau />} />
+            <Route path="/tableau" element={<Tableau />} />
             <Route path={"power-bi"} element={<PowerBIComponent />} />
             <Route path={"power-bi/:name"} element={<PowerBIDetail />} />
             <Route path="/section4" element={<UnderConstruction />} />
