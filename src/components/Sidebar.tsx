@@ -103,7 +103,7 @@ const Sidebar = () => {
             <li>
               <NavLink to={"/Tableau"} className="link">
                 <SiTableau size={23} className="min-w-max" />
-                Tableau Portfolio
+                Tableau Vizzes
               </NavLink>
             </li>
             <li>
