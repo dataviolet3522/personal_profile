@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Layout from "./Layout";
 import Profile from "./components/Profile";
+import Tableau from "./components/Tableau";
 import UnderConstruction from "./components/UnderConstruction";
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
         <Layout>
           <Routes>
             <Route path="/" element={<Profile />} />
-            <Route path="/Tableau" element={<UnderConstruction />} />
+            <Route path="/Tableau" element={<Tableau />} />
             <Route path="/section3" element={<UnderConstruction />} />
             <Route path="/section4" element={<UnderConstruction />} />
             <Route path="/section5" element={<UnderConstruction />} />
