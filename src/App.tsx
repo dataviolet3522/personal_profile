@@ -4,6 +4,8 @@ import Layout from "./Layout";
 import Profile from "./components/Profile";
 import Tableau from "./components/Tableau";
 import UnderConstruction from "./components/UnderConstruction";
+import PowerBIComponent from "./components/PowerBI";
+import { PowerBIDetail } from "./components/PowerBIDetail";
 
 const App = () => {
   return (
@@ -13,7 +15,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Profile />} />
             <Route path="/Tableau" element={<Tableau />} />
-            <Route path="/section3" element={<UnderConstruction />} />
+            <Route path={"power-bi"} element={<PowerBIComponent />} />
+            <Route path={"power-bi/:name"} element={<PowerBIDetail />} />
             <Route path="/section4" element={<UnderConstruction />} />
             <Route path="/section5" element={<UnderConstruction />} />
           </Routes>

@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { NavLink, useLocation } from "react-router-dom";
 
 import { SiTableau } from "react-icons/si";
-import { AiOutlineAppstore } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { HiOutlineDatabase } from "react-icons/hi";
 import { MdMenu } from "react-icons/md";
+import { TbBrandGoogleAnalytics } from "react-icons/tb";
 
 const Sidebar = () => {
   const isBigScreen = useMediaQuery({
@@ -107,9 +107,9 @@ const Sidebar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to={"/section3"} className="link">
-                <AiOutlineAppstore size={23} className="min-w-max" />
-                Section 3
+              <NavLink to={"power-bi"} className="link">
+                <TbBrandGoogleAnalytics size={23} className="min-w-max" />
+                Power BI
               </NavLink>
             </li>
             <li>
