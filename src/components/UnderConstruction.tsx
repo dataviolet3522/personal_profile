@@ -1,5 +1,3 @@
-import React from "react";
-
 const UnderConstruction = () => {
   return <div className="text-2xl font-bold">Under construction</div>;
 };
