@@ -5,7 +5,6 @@ import { NavLink, useLocation } from "react-router-dom";
 
 import { SiTableau } from "react-icons/si";
 import { BsPerson } from "react-icons/bs";
-import { HiOutlineDatabase } from "react-icons/hi";
 import { MdMenu } from "react-icons/md";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
 
