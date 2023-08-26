@@ -97,27 +97,27 @@ const Sidebar = () => {
             <li>
               <NavLink to={"/"} className="link">
                 <BsPerson size={23} className="min-w-max" />
-                Portfolio
+                Profile Summary
               </NavLink>
             </li>
             <li>
-              <NavLink to={"/Tableau"} className="link">
+              <NavLink to={"/tableau"} className="link">
                 <SiTableau size={23} className="min-w-max" />
-                Tableau Vizzes
+                Tableau Portfolio
               </NavLink>
             </li>
             <li>
               <NavLink to={"power-bi"} className="link">
                 <TbBrandGoogleAnalytics size={23} className="min-w-max" />
-                Power BI
+                Power BI Portfolio
               </NavLink>
             </li>
-            <li>
-              <NavLink to={"/section4"} className="link">
+            {/* <li>
+              <NavLink to={"/domo"} className="link">
                 <HiOutlineDatabase size={23} className="min-w-max" />
-                Section 4
+                DOMO
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </motion.div>

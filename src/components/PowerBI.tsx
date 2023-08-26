@@ -57,7 +57,10 @@ const PowerBIComponent = () => {
         {powerBIData.map((item, index) => {
           const { name, routePath, img } = item;
           return (
-            <Card className=" lg:max-w-[31%] md:max-w-[45%] sm:max-w-[100%]  grow overflow-hidden mr-4 mb-4">
+            <Card
+              key={index}
+              className="lg:max-w-[32%] md:max-w-[45%] sm:max-w-[100%]  grow overflow-hidden mr-4 mb-4"
+            >
               <CardHeader
                 floated={false}
                 shadow={false}
