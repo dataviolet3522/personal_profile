@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import {
   Card,
   CardHeader,
@@ -8,8 +8,8 @@ import {
   Tooltip,
   Spinner,
 } from "@material-tailwind/react";
-import axios from "axios";
 import { AiOutlineEye, AiOutlineStar } from "react-icons/ai";
+import { TABLEAU_DASHBOARD_DATA } from "../assets/temp/tableauDashboardData";
 
 interface vizType {
   authorDisplayName: string;
@@ -23,27 +23,28 @@ interface vizType {
 }
 
 const Tableau = () => {
-  const [vizzes, setVizzes] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  // const [vizzes, setVizzes] = useState([]);
+  const [isLoading] = useState(false);
 
   const publicTableauLink = "https://public.tableau.com";
 
-  useEffect(() => {
-    setIsLoading(true);
-    const corsAnywhereUrl = "https://thingproxy.freeboard.io/fetch/";
-    const apiUrl = `${publicTableauLink}/public/apis/workbooks?profileName=venkat5345&start=0&count=50&visibility=NON_HIDDEN`;
-    axios
-      .get(`${corsAnywhereUrl}${apiUrl}`)
-      .then((res) => {
-        setVizzes(res?.data?.contents);
-        setIsLoading(false);
-      })
-      .catch((err) => {
-        setVizzes([]);
-        setIsLoading(false);
-        console.log(err);
-      });
-  }, []);
+  // TODO: Need to use once tableau API ready
+  // useEffect(() => {
+  //   setIsLoading(true);
+  //   const corsAnywhereUrl = "https://thingproxy.freeboard.io/fetch/";
+  //   const apiUrl = `${publicTableauLink}/public/apis/workbooks?profileName=venkat5345&start=0&count=50&visibility=NON_HIDDEN`;
+  //   axios
+  //     .get(`${corsAnywhereUrl}${apiUrl}`)
+  //     .then((res) => {
+  //       setVizzes(res?.data?.contents);
+  //       setIsLoading(false);
+  //     })
+  //     .catch((err) => {
+  //       setVizzes([]);
+  //       setIsLoading(false);
+  //       console.log(err);
+  //     });
+  // }, []);
 
   const getImageUrl = (viz: vizType) => {
     return `${publicTableauLink}/static/images/aa/${viz.workbookRepoUrl}/${viz.defaultViewName}/4_3.png`;
@@ -63,8 +64,8 @@ const Tableau = () => {
         <div className="p-5 py-1">
           <div className="text-2xl font-bold">Tableau Portfolio</div>
           <div className="flex flex-wrap mt-5">
-            {vizzes.length ? (
-              vizzes?.map((viz: vizType, i: number) => {
+            {TABLEAU_DASHBOARD_DATA.length ? (
+              TABLEAU_DASHBOARD_DATA?.map((viz: vizType, i: number) => {
                 return (
                   <Card
                     key={i}
