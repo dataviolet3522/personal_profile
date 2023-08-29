@@ -37,6 +37,11 @@ export const PowerBIDetail = () => {
         powerBILink +
         "view?r=eyJrIjoiMWE0ZDEyNGItZTVhOS00Mzc3LTliMmYtYTVmNTJlMzVhNjc0IiwidCI6IjQ3YzgxNDZiLTljNGEtNDU1MC04ODg0LTkyMGM5N2Y4OGMwYyJ9";
     }
+    if (name === "technology-mergers-acquisitions") {
+      powerBILink =
+        powerBILink +
+        "view?r=eyJrIjoiYWY4YzU5MDAtZTE3MS00ZjY3LWEyNTItODAwOTI4ODViOThhIiwidCI6IjQ3YzgxNDZiLTljNGEtNDU1MC04ODg0LTkyMGM5N2Y4OGMwYyJ9";
+    }
     return powerBILink;
   };
   return (
