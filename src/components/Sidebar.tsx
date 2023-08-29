@@ -91,14 +91,15 @@ const Sidebar = () => {
         <div className="flex items-center gap-2.5 font-medium border-b py-3 border-slate-300  mx-3">
           <img
             src="https://img.freepik.com/premium-vector/avatar-man-with-beard-office-worker-creative-team-young-student-brown-hair_277909-134.jpg"
-            width={45}
-            alt=""
+            width={60}
+            alt="profile"
           />
           <div>
             <span className="text-xl whitespace-pre">Venkat V</span>
             <div className="text-xs text-gray-500 cursor-pointer hover:text-blue-600">
               v.venki05@gmail.com
             </div>
+            <div className="text-xs text-gray-500 pt-1">Georgia, USA</div>
           </div>
         </div>
         <div className="flex flex-col  h-full">
@@ -128,7 +129,7 @@ const Sidebar = () => {
               </NavLink>
             </li> */}
           </ul>
-          <div className="flex-1 text-sm z-50  max-h-10 my-auto  whitespace-pre   w-full  font-medium  ">
+          <div className="flex-1 text-sm z-50  max-h-20 my-auto  whitespace-pre   w-full  font-medium  ">
             <div className="flex border-y border-slate-300 p-4 items-center justify-between">
               <div>
                 <Button
