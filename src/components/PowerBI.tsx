@@ -52,7 +52,7 @@ const powerBIData = [
 const PowerBIComponent = () => {
   return (
     <div className="p-5 py-1">
-      <div className="text-2xl font-bold">Power BI</div>
+      <div className="text-2xl font-bold">Power BI Portfolio</div>
       <div className="flex flex-wrap mt-5">
         {powerBIData.map((item, index) => {
           const { name, routePath, img } = item;

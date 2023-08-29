@@ -61,7 +61,7 @@ const Tableau = () => {
         </div>
       ) : (
         <div className="p-5 py-1">
-          <div className="text-2xl font-bold">Tableau Vizzes</div>
+          <div className="text-2xl font-bold">Tableau Portfolio</div>
           <div className="flex flex-wrap mt-5">
             {vizzes.length ? (
               vizzes?.map((viz: vizType, i: number) => {
