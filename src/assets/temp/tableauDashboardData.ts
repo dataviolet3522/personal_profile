@@ -1,26 +1,5 @@
 export const TABLEAU_DASHBOARD_DATA = [
   {
-    workbookRepoUrl: "TableauPortfolio_16932266939300",
-    title: "Tableau Portfolio",
-    defaultViewName: "AboutMe",
-    viewCount: 51,
-    numberOfFavorites: 0,
-    authorDisplayName: "VENKAT",
-    authorProfileName: "venkat5345",
-    defaultViewRepoUrl: "TableauPortfolio_16932266939300/sheets/AboutMe",
-  },
-  {
-    workbookRepoUrl: "TableauResume-VV",
-    title: "Tableau Resume - VV",
-    defaultViewName: "TableauResume-TylerEricksonMobile",
-    viewCount: 9,
-    numberOfFavorites: 0,
-    authorDisplayName: "VENKAT",
-    authorProfileName: "venkat5345",
-    defaultViewRepoUrl:
-      "TableauResume-VV/sheets/TableauResume-TylerEricksonMobile",
-  },
-  {
     workbookRepoUrl: "CovidDashboard_16541499843110",
     title: "Covid Dashboard",
     defaultViewName: "NationalOverview",
