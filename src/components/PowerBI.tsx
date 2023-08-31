@@ -16,8 +16,14 @@ import InsuranceDashboardImage from "../assets/Images/powerbi/insurance-dashboar
 import QuickDashboardImage from "../assets/Images/powerbi/quick-dashboard.png";
 import SalesDashboardImage from "../assets/Images/powerbi/sales-dashboard.png";
 import TechnologyMergersImage from "../assets/Images/powerbi/technology-mergers-dashboard.jpeg";
+import SalesRevenueAnalysisImage from "../assets/Images/powerbi/sales-revenue-analysis.jpg";
 
 const powerBIData = [
+  {
+    name: "Sales Revenue Analysis",
+    routePath: "/power-bi/sales-revenue-analysis",
+    img: SalesRevenueAnalysisImage,
+  },
   {
     name: "Technology Mergers & Acquisitions",
     routePath: "/power-bi/technology-mergers-acquisitions",
