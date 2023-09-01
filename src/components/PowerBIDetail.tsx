@@ -42,6 +42,11 @@ export const PowerBIDetail = () => {
         powerBILink +
         "view?r=eyJrIjoiYWY4YzU5MDAtZTE3MS00ZjY3LWEyNTItODAwOTI4ODViOThhIiwidCI6IjQ3YzgxNDZiLTljNGEtNDU1MC04ODg0LTkyMGM5N2Y4OGMwYyJ9";
     }
+    if (name === "sales-revenue-analysis") {
+      powerBILink =
+        powerBILink +
+        "view?r=eyJrIjoiOTgwYWE1NjItMjY0Ni00NjFmLWJiMTgtNTdlMTgwODc4NmIyIiwidCI6IjQ3YzgxNDZiLTljNGEtNDU1MC04ODg0LTkyMGM5N2Y4OGMwYyJ9";
+    }
     return powerBILink;
   };
   return (
