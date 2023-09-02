@@ -8,6 +8,13 @@ import { BsPerson } from "react-icons/bs";
 import { MdMenu } from "react-icons/md";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { IoInfiniteSharp } from "react-icons/io5";
+import { SiMicrosoftazure, SiPlausibleanalytics } from "react-icons/si";
+import { ImEmbed2 } from "react-icons/im";
+import { BiLogoReact } from "react-icons/bi";
+import { FiMoreHorizontal } from "react-icons/fi";
+import { MdOutlineAnalytics } from "react-icons/md";
+import { DiGoogleAnalytics } from "react-icons/di";
 import { Button } from "@material-tailwind/react";
 
 const Sidebar = () => {
@@ -103,7 +110,7 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="flex flex-col  h-full">
-          <ul className="whitespace-pre px-2.5 text-[0.9rem] py-5 flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-100   md:h-[68%] h-[70%]">
+          <ul className="whitespace-pre px-2.5 text-[0.9rem] py-5 flex flex-col gap-1  font-medium overflow-x-hidden scrollbar-thin scrollbar-track-white scrollbar-thumb-slate-100   md:h-[79%] h-[79%]">
             <li>
               <NavLink to={"/"} className="link">
                 <BsPerson size={23} className="min-w-max" />
@@ -122,14 +129,56 @@ const Sidebar = () => {
                 Power BI Portfolio
               </NavLink>
             </li>
-            {/* <li>
+            <li>
               <NavLink to={"/domo"} className="link">
-                <HiOutlineDatabase size={23} className="min-w-max" />
-                DOMO
+                <DiGoogleAnalytics size={23} className="min-w-max" />
+                Domo Portfolio
               </NavLink>
-            </li> */}
+            </li>
+            <li>
+              <NavLink to={"/apache"} className="link">
+                <IoInfiniteSharp size={23} className="min-w-max" />
+                Apache Superset
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/azure"} className="link">
+                <SiMicrosoftazure size={20} className="min-w-max" />
+                Azure Data Engineer
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/power-platform"} className="link">
+                <SiPlausibleanalytics size={23} className="min-w-max" />
+                Power Platform
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/react-portfolio"} className="link">
+                <BiLogoReact size={23} className="min-w-max" />
+                React Portfolio
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/embedded"} className="link">
+                <ImEmbed2 size={23} className="min-w-max" />
+                Embedded Analytics
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/skill"} className="link">
+                <MdOutlineAnalytics size={23} className="min-w-max" />
+                Skill Matrix
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to={"/others"} className="link">
+                <FiMoreHorizontal size={23} className="min-w-max" />
+                Other Experience
+              </NavLink>
+            </li>
           </ul>
-          <div className="flex-1 text-sm z-50  max-h-20 my-auto  whitespace-pre   w-full  font-medium  ">
+          <div className="flex-1 text-sm z-50 my-auto  whitespace-pre   w-full  font-medium  ">
             <div className="flex border-y border-slate-300 p-4 items-center justify-between">
               <div>
                 <Button

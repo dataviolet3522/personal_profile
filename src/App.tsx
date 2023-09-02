@@ -17,8 +17,14 @@ const App = () => {
             <Route path="/tableau" element={<Tableau />} />
             <Route path={"power-bi"} element={<PowerBIComponent />} />
             <Route path={"power-bi/:name"} element={<PowerBIDetail />} />
-            <Route path="/section4" element={<UnderConstruction />} />
-            <Route path="/section5" element={<UnderConstruction />} />
+            <Route path="/domo" element={<UnderConstruction />} />
+            <Route path="/apache" element={<UnderConstruction />} />
+            <Route path="/azure" element={<UnderConstruction />} />
+            <Route path="/power-platform" element={<UnderConstruction />} />
+            <Route path="/react-portfolio" element={<UnderConstruction />} />
+            <Route path="/embedded" element={<UnderConstruction />} />
+            <Route path="/skill" element={<UnderConstruction />} />
+            <Route path="/others" element={<UnderConstruction />} />
           </Routes>
         </Layout>
       </Router>
