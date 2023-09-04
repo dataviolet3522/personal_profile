@@ -9,9 +9,9 @@ import { MdMenu } from "react-icons/md";
 import { TbBrandGoogleAnalytics } from "react-icons/tb";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { IoInfiniteSharp } from "react-icons/io5";
-import { SiMicrosoftazure, SiPlausibleanalytics } from "react-icons/si";
+import { SiMicrosoftazure } from "react-icons/si";
 import { ImEmbed2 } from "react-icons/im";
-import { BiLogoReact } from "react-icons/bi";
+import { BiLogoReact, BiSolidTagAlt } from "react-icons/bi";
 import { FiMoreHorizontal } from "react-icons/fi";
 import { MdOutlineAnalytics } from "react-icons/md";
 import { DiGoogleAnalytics } from "react-icons/di";
@@ -149,7 +149,7 @@ const Sidebar = () => {
             </li>
             <li>
               <NavLink to={"/power-platform"} className="link">
-                <SiPlausibleanalytics size={23} className="min-w-max" />
+                <BiSolidTagAlt size={23} className="min-w-max" />
                 Power Platform
               </NavLink>
             </li>
