@@ -6,6 +6,8 @@ import Tableau from "./components/Tableau";
 import UnderConstruction from "./components/UnderConstruction";
 import PowerBIComponent from "./components/PowerBI";
 import { PowerBIDetail } from "./components/PowerBIDetail";
+import DomoComponent from "./components/DomoComponent";
+import ApacheComponent from "./components/ApacheComponent";
 
 const App = () => {
   return (
@@ -17,8 +19,8 @@ const App = () => {
             <Route path="/tableau" element={<Tableau />} />
             <Route path={"power-bi"} element={<PowerBIComponent />} />
             <Route path={"power-bi/:name"} element={<PowerBIDetail />} />
-            <Route path="/domo" element={<UnderConstruction />} />
-            <Route path="/apache" element={<UnderConstruction />} />
+            <Route path="/domo" element={<DomoComponent />} />
+            <Route path="/apache" element={<ApacheComponent />} />
             <Route path="/azure" element={<UnderConstruction />} />
             <Route path="/power-platform" element={<UnderConstruction />} />
             <Route path="/react-portfolio" element={<UnderConstruction />} />
