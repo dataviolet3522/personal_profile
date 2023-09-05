@@ -104,7 +104,7 @@ const Sidebar = () => {
           <div>
             <span className="text-xl whitespace-pre">Venkat V</span>
             <div className="text-xs text-gray-500 cursor-pointer hover:text-blue-600">
-              v.venki05@gmail.com
+              venkatv.analytics@gmail.com
             </div>
             <div className="text-xs text-gray-500 pt-1">Georgia, USA</div>
           </div>
